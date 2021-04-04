@@ -1,0 +1,25 @@
+{
+    "name": "php/design_patterns",
+    "description": "design_patterns",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Mohamed Ahmed",
+            "email": "engmohamedahmed00@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "test/"
+        }
+    }
+}

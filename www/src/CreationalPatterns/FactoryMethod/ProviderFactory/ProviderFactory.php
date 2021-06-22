@@ -3,7 +3,11 @@ namespace App\CreationalPatterns\FactoryMethod\ProviderFactory;
 
 use App\CreationalPatterns\FactoryMethod\Providers\Provider;
 
-interface ProviderFactory
+abstract class ProviderFactory
 {
-    public function createProvider(): Provider;
+    abstract protected function createProvider(): Provider;
+
+    public function getInstance() : Provider{
+        return $this->createProvider();
+    }
 }

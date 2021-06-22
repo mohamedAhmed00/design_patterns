@@ -17,32 +17,32 @@ class FactoryMethodTest extends TestCase
 {
     public function testAmadeusFactoryMethod(){
         $amadeus = new AmadeusFactory();
-        $this->assertEquals(new AmadeusProvider(),$amadeus->createProvider());
-        $this->assertInstanceOf(Provider::class,$amadeus->createProvider());
+        $this->assertEquals(new AmadeusProvider(),$amadeus->getInstance());
+        $this->assertInstanceOf(Provider::class,$amadeus->getInstance());
     }
 
     public function testAmadeusSelfApiFactoryMethod(){
         $amadeus_self_api = new AmadeusSelfApiFactory();
-        $this->assertEquals(new AmadeusSelfApiProvider(),$amadeus_self_api->createProvider());
-        $this->assertInstanceOf(Provider::class,$amadeus_self_api->createProvider());
+        $this->assertEquals(new AmadeusSelfApiProvider(),$amadeus_self_api->getInstance());
+        $this->assertInstanceOf(Provider::class,$amadeus_self_api->getInstance());
     }
 
     public function testTravelPortFactoryMethod(){
         $travel_port = new TravelPortFactory();
-        $this->assertEquals(new TravelPortProvider(),$travel_port->createProvider());
-        $this->assertInstanceOf(Provider::class,$travel_port->createProvider());
+        $this->assertEquals(new TravelPortProvider(),$travel_port->getInstance());
+        $this->assertInstanceOf(Provider::class,$travel_port->getInstance());
     }
 
     public function testDOTFactoryMethod(){
         $dot = new DOTFactory();
-        $this->assertEquals(new DOTSupplier(),$dot->createProvider());
-        $this->assertInstanceOf(Provider::class,$dot->createProvider());
+        $this->assertEquals(new DOTSupplier(),$dot->getInstance());
+        $this->assertInstanceOf(Provider::class,$dot->getInstance());
     }
 
     public function testMickeyFactoryMethod(){
         $mickey = new MickeyFactory();
-        $this->assertEquals(new MickeySupplier(),$mickey->createProvider());
-        $this->assertInstanceOf(Provider::class,$mickey->createProvider());
+        $this->assertEquals(new MickeySupplier(),$mickey->getInstance());
+        $this->assertInstanceOf(Provider::class,$mickey->getInstance());
     }
 
 }

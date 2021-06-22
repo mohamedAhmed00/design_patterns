@@ -5,9 +5,9 @@ use App\CreationalPatterns\FactoryMethod\Providers\DOTSupplier;
 use App\CreationalPatterns\FactoryMethod\Providers\Provider;
 use JetBrains\PhpStorm\Pure;
 
-class DOTFactory implements ProviderFactory
+class DOTFactory extends ProviderFactory
 {
-    #[Pure] public function createProvider(): Provider
+    protected function createProvider(): Provider
     {
         return new DOTSupplier();
     }

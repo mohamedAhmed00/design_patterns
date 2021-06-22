@@ -5,9 +5,9 @@ use App\CreationalPatterns\FactoryMethod\Providers\Provider;
 use App\CreationalPatterns\FactoryMethod\Providers\TravelPortProvider;
 use JetBrains\PhpStorm\Pure;
 
-class TravelPortFactory implements ProviderFactory
+class TravelPortFactory extends ProviderFactory
 {
-    #[Pure] public function createProvider(): Provider
+    protected function createProvider(): Provider
     {
         return new TravelPortProvider();
     }

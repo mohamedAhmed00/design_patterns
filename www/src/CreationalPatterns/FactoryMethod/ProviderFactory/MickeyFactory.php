@@ -5,9 +5,9 @@ use App\CreationalPatterns\FactoryMethod\Providers\MickeySupplier;
 use App\CreationalPatterns\FactoryMethod\Providers\Provider;
 use JetBrains\PhpStorm\Pure;
 
-class MickeyFactory implements ProviderFactory
+class MickeyFactory extends ProviderFactory
 {
-    #[Pure] public function createProvider(): Provider
+    protected function createProvider(): Provider
     {
         return new MickeySupplier();
     }

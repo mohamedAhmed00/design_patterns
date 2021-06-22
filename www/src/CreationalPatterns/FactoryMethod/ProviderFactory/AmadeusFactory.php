@@ -5,9 +5,9 @@ use App\CreationalPatterns\FactoryMethod\Providers\AmadeusProvider;
 use App\CreationalPatterns\FactoryMethod\Providers\Provider;
 use JetBrains\PhpStorm\Pure;
 
-class AmadeusFactory implements ProviderFactory
+class AmadeusFactory extends ProviderFactory
 {
-    #[Pure] public function createProvider(): Provider
+    protected function createProvider(): Provider
     {
         return new AmadeusProvider();
     }

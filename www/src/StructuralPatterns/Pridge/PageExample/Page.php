@@ -3,15 +3,13 @@ namespace App\StructuralPatterns\Pridge\PageExample;
 
 abstract class Page
 {
-    protected $render;
 
     /**
      * Page constructor.
      * @param $render
      */
-    public function __construct($render)
+    public function __construct(protected $render)
     {
-        $this->render = $render;
     }
 
     /**

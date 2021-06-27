@@ -85,26 +85,40 @@ require_once __DIR__ . '/vendor/autoload.php';
 //$car = new Car(new \App\StructuralPatterns\Pridge\VehicleExample\Body('name','asdasd'));
 //$car->move();
 
-use App\StructuralPatterns\Adapter\PredisAdapter;
+//use App\StructuralPatterns\Adapter\PredisAdapter;
+//
+//$adapter = new PredisAdapter(new \App\StructuralPatterns\Adapter\Packages\Predis());
+//
+//$adapter->connect();
+//$adapter->read();
+//$adapter->write();
+//echo "<br>";
+//
+//use App\StructuralPatterns\Adapter\RedisAdapter;
+//
+//$adapter = new RedisAdapter(new \App\StructuralPatterns\Adapter\Packages\Redis());
+//$adapter->connect();
+//$adapter->read();
+//$adapter->write();
+//echo "<br>";
+//
+//use App\StructuralPatterns\Adapter\MemecacheAdapter;
+//
+//$adapter = new MemecacheAdapter(new \App\StructuralPatterns\Adapter\Packages\MemeCache());
+//$adapter->connect();
+//$adapter->read();
+//$adapter->write();
 
-$adapter = new PredisAdapter(new \App\StructuralPatterns\Adapter\Packages\Predis());
 
-$adapter->connect();
-$adapter->read();
-$adapter->write();
-echo "<br>";
+//$booking = new \App\StructuralPatterns\Decorator\BookingRoom();
+//var_dump($booking->calculatePrice());
+//$booking = new \App\StructuralPatterns\Decorator\Meals($booking);
+//var_dump($booking->calculatePrice());
+//
+//$booking = new \App\StructuralPatterns\Decorator\AirCondations($booking);
+//var_dump($booking->calculatePrice());
+//
+//$booking = new \App\StructuralPatterns\Decorator\Wifi($booking);
+//
+//var_dump($booking->calculatePrice());
 
-use App\StructuralPatterns\Adapter\RedisAdapter;
-
-$adapter = new RedisAdapter(new \App\StructuralPatterns\Adapter\Packages\Redis());
-$adapter->connect();
-$adapter->read();
-$adapter->write();
-echo "<br>";
-
-use App\StructuralPatterns\Adapter\MemecacheAdapter;
-
-$adapter = new MemecacheAdapter(new \App\StructuralPatterns\Adapter\Packages\MemeCache());
-$adapter->connect();
-$adapter->read();
-$adapter->write();

@@ -3,15 +3,13 @@ namespace App\CreationalPatterns\Builder\Computer\MotherBoard\MainPart;
 
 class Sockets
 {
-    private array $sockets;
 
     /**
      * Sockets constructor.
      * @param array $sockets
      */
-    public function __construct(array $sockets)
+    public function __construct(private array $sockets)
     {
-        $this->sockets = $sockets;
     }
 
     /**

@@ -7,7 +7,7 @@ class Body extends Component
     /**
      * Engine constructor.
      */
-    public function __construct(string $name, string $specifications)
+    public function __construct(private string $name, private string $specifications)
     {
         parent::__construct($name,$specifications);
     }

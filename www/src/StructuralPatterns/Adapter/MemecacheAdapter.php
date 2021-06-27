@@ -6,15 +6,13 @@ use App\StructuralPatterns\Adapter\Packages\IRedisInterface;
 
 class MemecacheAdapter implements CacheManager
 {
-    private IMemeCacheInterface $memeCache;
 
     /**
      * IMemeCacheInterface constructor.
      * @param IMemeCacheInterface $redis
      */
-    public function __construct(IMemeCacheInterface $memeCache)
+    public function __construct(private IMemeCacheInterface $memeCache)
     {
-        $this->memeCache = $memeCache;
     }
 
     public function connect()

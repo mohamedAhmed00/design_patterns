@@ -3,15 +3,13 @@ namespace App\CreationalPatterns\Builder\Computer;
 
 class Keyboard
 {
-    private bool $utfSupport;
 
     /**
      * Keyboard constructor.
      * @param bool $utfSupport
      */
-    public function __construct(bool $utfSupport)
+    public function __construct(private bool $utfSupport)
     {
-        $this->utfSupport = $utfSupport;
     }
 
     /**

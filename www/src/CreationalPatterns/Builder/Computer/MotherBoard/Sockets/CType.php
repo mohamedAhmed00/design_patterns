@@ -3,15 +3,13 @@ namespace App\CreationalPatterns\Builder\Computer\MotherBoard\Sockets;
 
 class CType
 {
-    private bool $withVideoTransfer;
 
     /**
      * CType constructor.
      * @param bool $withVideoTransfer
      */
-    public function __construct(bool $withVideoTransfer)
+    public function __construct(private bool $withVideoTransfer)
     {
-        $this->withVideoTransfer = $withVideoTransfer;
     }
 
     /**

@@ -7,7 +7,7 @@ class Engine extends Component
     /**
      * Engine constructor.
      */
-    public function __construct(string $name, string $specifications)
+    public function __construct(protected string $name,protected string $specifications)
     {
         parent::__construct($name,$specifications);
     }

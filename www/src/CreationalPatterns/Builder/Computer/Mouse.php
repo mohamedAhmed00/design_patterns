@@ -3,15 +3,13 @@ namespace App\CreationalPatterns\Builder\Computer;
 
 class Mouse
 {
-    private bool $withExtraUtilities;
 
     /**
      * Mouse constructor.
      * @param bool $withExtraUtilities
      */
-    public function __construct(bool $withExtraUtilities)
+    public function __construct(private bool $withExtraUtilities)
     {
-        $this->withExtraUtilities = $withExtraUtilities;
     }
 
     /**

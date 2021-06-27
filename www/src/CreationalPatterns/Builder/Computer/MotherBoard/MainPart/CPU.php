@@ -3,15 +3,13 @@ namespace App\CreationalPatterns\Builder\Computer\MotherBoard\MainPart;
 
 class CPU
 {
-    private float $speed;
 
     /**
      * CPU constructor.
      * @param float $speed
      */
-    public function __construct(float $speed)
+    public function __construct(private float $speed)
     {
-        $this->speed = $speed;
     }
 
     /**

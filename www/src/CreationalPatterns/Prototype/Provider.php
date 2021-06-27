@@ -3,12 +3,6 @@ namespace App\CreationalPatterns\Prototype;
 
 class Provider implements Prototype
 {
-
-    private $name;
-    private $type;
-    private $version;
-    private $url;
-
     /**
      * Provider constructor.
      * @param $name
@@ -16,12 +10,8 @@ class Provider implements Prototype
      * @param $version
      * @param $url
      */
-    public function __construct($name, $type, $version, $url)
+    public function __construct(private $name, private $type, private $version, private $url)
     {
-        $this->name = $name;
-        $this->type = $type;
-        $this->version = $version;
-        $this->url = $url;
     }
 
     public function search(){

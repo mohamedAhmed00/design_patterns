@@ -6,11 +6,8 @@ use App\CreationalPatterns\Builder\Computer\Types\Computer;
 
 class Director implements DirectorInterface
 {
-    private Builder $builder;
-
-    public function __construct(Builder $builder)
+    public function __construct(private Builder $builder)
     {
-        $this->builder = $builder;
     }
 
     public function changeBuilder(Builder $builder)

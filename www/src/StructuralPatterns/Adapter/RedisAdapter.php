@@ -5,15 +5,13 @@ use App\StructuralPatterns\Adapter\Packages\IRedisInterface;
 
 class RedisAdapter implements CacheManager
 {
-    private IRedisInterface $redis;
 
     /**
      * RedisAdapter constructor.
      * @param IRedisInterface $redis
      */
-    public function __construct(IRedisInterface $redis)
+    public function __construct(private IRedisInterface $redis)
     {
-        $this->redis = $redis;
     }
 
     public function connect()

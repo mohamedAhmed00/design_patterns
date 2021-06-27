@@ -6,10 +6,6 @@ class Singletone
 {
     private static Test $instance;
 
-    private function __construct()
-    {
-    }
-
     public static function getInstance(): Test
     {
         if (empty(self::$instance)){

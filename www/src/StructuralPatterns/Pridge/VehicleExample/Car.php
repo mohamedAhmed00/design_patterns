@@ -4,13 +4,11 @@ namespace App\StructuralPatterns\Pridge\VehicleExample;
 class Car extends Vehicle
 {
 
-    protected Component $component;
-
     /**
      * Vehicle constructor.
      * @param Component $component
      */
-    public function __construct(Component $component)
+    public function __construct(private Component $component)
     {
         parent::__construct($component);
     }

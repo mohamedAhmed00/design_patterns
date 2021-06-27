@@ -3,15 +3,13 @@ namespace App\CreationalPatterns\Builder\Computer;
 
 class CoolingSystem
 {
-    private int $lowTempLimit;
 
     /**
      * CoolingSystem constructor.
      * @param int $lowTempLimit
      */
-    public function __construct(int $lowTempLimit)
+    public function __construct(private int $lowTempLimit)
     {
-        $this->lowTempLimit = $lowTempLimit;
     }
 
     /**

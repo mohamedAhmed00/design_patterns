@@ -3,15 +3,13 @@ namespace App\CreationalPatterns\Builder\Computer;
 
 class UPS
 {
-    private int $duration;
 
     /**
      * UPS constructor.
      * @param int $duration
      */
-    public function __construct(int $duration)
+    public function __construct(private int $duration)
     {
-        $this->duration = $duration;
     }
 
     /**

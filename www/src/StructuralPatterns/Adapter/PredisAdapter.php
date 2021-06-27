@@ -5,15 +5,13 @@ use App\StructuralPatterns\Adapter\Packages\IPredisInterface;
 
 class PredisAdapter implements CacheManager
 {
-    private IPredisInterface $predis;
 
     /**
      * PredisAdapter constructor.
      * @param IPredisInterface $predis
      */
-    public function __construct(IPredisInterface $predis)
+    public function __construct(private IPredisInterface $predis)
     {
-        $this->predis = $predis;
     }
 
     public function connect()

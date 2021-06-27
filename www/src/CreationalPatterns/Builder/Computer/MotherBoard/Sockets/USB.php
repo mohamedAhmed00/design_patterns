@@ -3,15 +3,13 @@ namespace App\CreationalPatterns\Builder\Computer\MotherBoard\Sockets;
 
 class USB
 {
-    private string $version;
 
     /**
      * USB constructor.
      * @param string $version
      */
-    public function __construct(string $version)
+    public function __construct(private string $version)
     {
-        $this->version = $version;
     }
 
     /**

@@ -3,15 +3,13 @@ namespace App\CreationalPatterns\Builder\Computer\MotherBoard\MainPart;
 
 class NetworkCard
 {
-    private int $category;
 
     /**
      * NetworkCard constructor.
      * @param int $category
      */
-    public function __construct(int $category)
+    public function __construct(private int $category)
     {
-        $this->category = $category;
     }
 
     /**
